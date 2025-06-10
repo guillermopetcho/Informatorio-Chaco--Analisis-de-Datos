@@ -40,7 +40,7 @@ class DatasetAPI(Dataset):
             self.datos = df
             logger.info(f"Datos cargados exitosamente desde {self.fuente}")
 
-            # ¡Ojo! Hay que llamar a los métodos, con paréntesis
+            
             if self.auto_validar:
                 self.validar_datos()
             if self.auto_transformar:
